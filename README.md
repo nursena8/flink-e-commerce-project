@@ -25,11 +25,17 @@ This project focuses on building a recommendation system that provides product r
 
 2. **Start Flink and Kafka Docker Containers:**
    -To start the Flink and Kafka services using Docker Compose, run the following command in your terminal:
-3. **Create Docker Kafka  :**
+4. **Create Docker Kafka  :**
    -To build docker make sure you have connected docker and use this:
    ```docker-compose up -d```
    - one of the important note:if you see some error with server.properties file you will may modifie this file.(i cannot share this file because of the api passwords but i can help you on my mail)
-
+### ** Kafka Produce and Consume scripts: **
+Producing random data:
+```python3 producer.py```
+consuming data:
+```python3 consumer.py```
+docker terminal:  
+```./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecommerce-events --from-beginning```
 ### Project structure
  ```
     flink-e-commerce-project/
